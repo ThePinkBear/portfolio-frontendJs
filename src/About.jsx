@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './PinkBear.css'
 import './App.css'
+import './About.css'
 
 const About = () => {
   const [textPost, setTextPost] = useState([]);
@@ -23,10 +24,12 @@ const About = () => {
 
   return (
     <>
-      <section className='pinkBear-content'>
+      <section className='pinkBear'>
+        <article className='about-content'>
         <Link to="/">back</Link>
         <h3>About me:</h3>
           {about.map((about, index) => (<p key={index}>{about}<br/></p>))}
+        </article>
       </section>
     </>
   )

@@ -33,7 +33,7 @@ body {
   align-items: start;
   justify-content: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.85);

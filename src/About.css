@@ -1,0 +1,8 @@
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  align-items: left;
+  margin: 0 6rem;
+  font-size: 1.3rem;
+}
