@@ -35,4 +35,15 @@
   padding: 10rem 9% 2rem;
 }
 
-
+.pinkbear-footer {
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  bottom: 0;
+}
+.tools img {
+  width: 3vw;
+  margin: 0 3vw;
+}
