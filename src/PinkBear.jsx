@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { Typewriter, useTypewriter } from 'react-simple-typewriter';
+import 'react-simple-typewriter/dist/index';
 import './App.css';
 import './PinkBear.css';
 
@@ -8,10 +9,7 @@ import './PinkBear.css';
 function PinkBear() {
   const [textPost, setTextPost] = useState([]);
   const profilePicture = import.meta.env.VITE_API_PROFILE_PIC;
-  const { text } = useTypewriter({
-    words: ['Fullstack Developer', 'React Frontend Developer', '.Net Backend Developer'],
-    loop: 0,
-  });
+  
   const gh = import.meta.env.VITE_API_GH_LINK;
   const li = import.meta.env.VITE_API_LI_LINK;
   const API_URL = (import.meta.env.VITE_API_URL);
@@ -33,13 +31,23 @@ function PinkBear() {
         <article className='pinkBear-content'>
           <h3>Hi, my name is:</h3>
           <h1>Björn Noctiluca</h1>
-            <h3 className='wrapper'>
+            <h3>
               I'm a:
-              <span style={{fontWeight: 'bold', color:'pink'}}>
-                {text}
-              </span>
-              <span style={{color: '#f98d00'}}>
-                <Cursor cursorStyle='<'/>
+              <span>
+              <Typewriter
+                      words={[
+                        " .Net Backend Developer.",
+                        " React Frontend Developer.",
+                        " Fullstack Developer."
+                      ]}
+                      loop={0}
+                      cursor
+                      cursorStyle="<"
+                      cursorColor="#f98d00"
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                    />
               </span>
             </h3>
           <h5>{textPost.find((tp) => tp.name === "home")?.text}</h5> 

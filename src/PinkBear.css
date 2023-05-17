@@ -35,10 +35,9 @@
   font-size: 1.6rem;
 }
 
-
-
 .pinkBear-content span {
   color: rgb(215, 43, 224);
+  word-wrap: none;
 }
 .pinkBear-content a {
   color: #f06fd8;
