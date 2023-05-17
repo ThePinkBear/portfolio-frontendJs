@@ -43,10 +43,11 @@ function PinkBear() {
                       loop={0}
                       cursor
                       cursorStyle="<"
+                      cursorBlinking={false}
                       cursorColor="#f98d00"
                       typeSpeed={70}
                       deleteSpeed={50}
-                      delaySpeed={1000}
+                      delaySpeed={2000}
                     />
               </span>
             </h3>
