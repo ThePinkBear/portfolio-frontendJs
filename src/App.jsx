@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react'
 const App = () => {
   // const [token, setToken] = useState<Token>({});
   const logo = `${import.meta.env.VITE_API_LOGO_TOKEN}`;
-  const background = `${import.meta.env.VITE_API_BACKGROUND_IMAGE_TOKEN}`;
+  const [background] = useState(`${import.meta.env.VITE_API_BACKGROUND_IMAGE_TOKEN}`);
 
   const tokenAvailable = () => true /*Boolean(token.access_token*/;
   
@@ -21,7 +21,7 @@ const App = () => {
       element.style.backgroundImage = `url(${background})`;
     }
     
-  }, []);
+  }, background);
   
   return tokenAvailable() ? 
   (
