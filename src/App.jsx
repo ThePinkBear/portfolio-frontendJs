@@ -28,7 +28,7 @@ const App = () => {
     <>
       <overlay className='header-overlay'></overlay>
         <header className="header">
-          <img src={`${logo}`} className="logo" alt="PinkBear logo"/>
+          <img src={`${logo}`} className="logo" alt="PinkBear's logo"/>
           <nav className="nav">
             <Link to="/" className='active'>Home</Link>
             <Link to="/about">About me</Link>
