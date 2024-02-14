@@ -29,6 +29,7 @@
 }
 .pinkBear-content h5 {
   font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
 .pinkBear-content p {
@@ -40,10 +41,8 @@
   word-wrap: none;
 }
 .pinkBear-content a {
-  color: #f06fd8;
-  -webkit-text-stroke: 1px black;
+  color: #f6f6f6;
   font-size: 2.6rem;
-  text-shadow: 0 0 2px #ffffff;
   margin-bottom: 10px;
   margin-top: 10px;
 }

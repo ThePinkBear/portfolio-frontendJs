@@ -9,7 +9,7 @@ const About = () => {
   const API_URL = (import.meta.env.VITE_API_URL);
   
   const fetchData = () => {
-    fetch(`https://${API_URL}/api/texts/test`)
+    fetch(`https://${API_URL}/api/texts/temporary`)
     .then(response => response.json())
     .then(data => setTextPost(data));
   }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { Typewriter, useTypewriter } from 'react-simple-typewriter';
+import { Typewriter } from 'react-simple-typewriter';
 import 'react-simple-typewriter/dist/index';
 import './App.css';
 import './PinkBear.css';
@@ -16,7 +16,7 @@ function PinkBear() {
   
 
   const fetchData = () => {
-    fetch(`https://${API_URL}/api/texts/test`)
+    fetch(`https://${API_URL}/api/texts/temporary`)
       .then(response => response.json())
       .then(data => setTextPost(data));
   }
@@ -51,7 +51,7 @@ function PinkBear() {
                     />
               </span>
             </h3>
-          <h5>{textPost.find((tp) => tp.name === "home")?.text}</h5> 
+          <h5>{textPost.find((tp) => tp.name === "home")?.text}</h5>
           <p>Socials:</p>
             <section className='rIcons'>
               <BsGithub className='gitHub' target='_blank' onClick={_ => window.location.href=gh}/>

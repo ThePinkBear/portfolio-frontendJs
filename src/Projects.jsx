@@ -10,13 +10,10 @@ const Projects = () => {
         <Link to="/">back</Link>
         <h3>GitHub Repos:</h3>
           <article>
-            <a href="https://github.com/ThePinkBear/portfolio-frontend.git" target="_blank">The repo for this portfolios frontend(React Typescript)</a>
+            <a href="https://github.com/ThePinkBear/portfolio-frontend.git" target="_blank"><h3>The repo for this portfolios frontend(React Typescript)</h3></a>
           </article>
           <article>
-            <a href="https://github.com/ThePinkBear/portfolio-backend.git" target="_blank">The repo for this portfolios backend(.Net c# web-api)</a>
-          </article>
-          <article>
-            <a href="https://github.com/ThePinkBear/code-test-simpleCalculator.git" target="_blank">Recent code test. (c#)</a>
+            <a href="https://github.com/ThePinkBear/portfolio-backend.git" target="_blank"><h3>The repo for this portfolios backend(.Net c# web-api)</h3></a>
           </article>
       </section>
     </>
